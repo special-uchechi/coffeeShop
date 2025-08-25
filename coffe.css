@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.addEffects{
+    position: relative;
+}
+
+.addEffects::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, black, transparent);
+}
+
+.addEffects::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, black, transparent);
+}
+
+.right-boder{
+    position: relative;
+}
+
+.right-boder::before{
+    content: " ";
+    position: absolute;
+    right: -11px;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, black, transparent);
+}
